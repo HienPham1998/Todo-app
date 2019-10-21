@@ -58,7 +58,7 @@ export default {
                 .then(response => {
                     let found = this.todos.find(e => e.id == id);
                     if (found) {
-                        found.complete = true;
+                        found.complete = !found.complete;
                     }
                 });
         },
